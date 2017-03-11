@@ -13,7 +13,7 @@ section {
     hace que los hijos ocuoen elalto del padre y el ancho del contenido*/
 
 
-/*00001 - El Flex Container (contenedor padre) tiene dos ejes
+/*00002 - El Flex Container (contenedor padre) tiene dos ejes
     el eje por defecto (horizontal) y el eje secundario (vertical)*/
 
 /*La propiedad flex-direction: row|column*/
@@ -29,7 +29,10 @@ section {
 
 
 /*00005 - Alineamos elementos en el eje principal con justify-content
-    valores space-between|flex-end|flex-start|center|space_around||*/
+    valores: space-between|flex-end|flex-start|center|space_around||*/
+
+/*00006 - Alineamos elementos en el eje secundario con align-items
+    valores: space-between|flex-end|flex-start|center|stretch|baseline|*/
 
 /*La propiedad flex-wrap: nowrap|wrap|wrap-reverse*/
 /*****http://the-echoplex.net/flexyboxes/********/
