@@ -1,25 +1,25 @@
 section {
     width: 400px;
     height: 400px;
-    border: 1px solid #000;
+    border: 1px solid #353535;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 /*00001 - FlexBox necesita un pabre y por lo menos un hijo*/
 
 /*la propiedad display: flex;
-    hace que los hijos ocuoen elalto del padre y el ancho del contenido*/
-
+    hace que active flexbox en ese contenedor,
+    por defecto los hijos ocupen el alto del padre y el ancho del contenido*/
 
 /*00002 - El Flex Container (contenedor padre) tiene dos ejes
     el eje por defecto (horizontal) y el eje secundario (vertical)*/
-
-/*La propiedad flex-direction: row|column*/
+/*  La propiedad flex-direction: row|column  */
 
 /*00003 - Podemos modificar el eje principal con la propiedad flex-direction*/
-
 /*La propiedad flex-direction: row|column|row-reverse|column-reverse*/
 
 /*00004 - Podemos permitir el salto de columnas con la propiedad Flex-Wrap
@@ -27,27 +27,61 @@ section {
 
 /*La propiedad flex-wrap: nowrap|wrap|wrap-reverse*/
 
-
 /*00005 - Alineamos elementos en el eje principal con justify-content
-    valores: space-between|flex-end|flex-start|center|space_around||*/
+    valores: flex-end|flex-start|center|space_around|space-between*/
 
 /*00006 - Alineamos elementos en el eje secundario con align-items
     valores: space-between|flex-end|flex-start|center|stretch|baseline|*/
+
+/*00007 - Alinear hijos de forma individual en el eje secundario con align-self
+        Esta propiedad se pone al hijo.
+        Permite modificar el centrado en el eje segundario de un elemento particular
+
+/*00008 - Los hijos flexibles ignoran algunas propiedades CSS como float, clear, vertical-align
+        estas propiedades son ingnoradas para los hijos, los padres si las pueden contener
+
+
+/*00009 - Cambias el tamaño de los hijos con flex-grow, flex-shrink, flex-basis
+por defecto el tamaño de los hijos se define por su contenido
+-flex-grow define el tamaño que crecerá un hijo en relación a sus hermanos
+    cuando hay espacio disponible en el contenedor
+    valor por defecto 0
+ -flex-shrink define el tamaño de reducción de un hijo respecto a sus hermano
+    cuando falte espacio en su contenedor
+    valor por defecto 1 para todos
+    poco usado.
+ -flex-bases define el valor inical del hijo
+    valor por defento auto
+    si los defino en 0, todos serán iguales, definiendo el mismo valor en flex-grow
+
+
+
+ */
 
 /*La propiedad flex-wrap: nowrap|wrap|wrap-reverse*/
 /*****http://the-echoplex.net/flexyboxes/********/
 /*****http://flexbox.help/********/
 
+article {
+    border-radius: 10%;
+    flex-basis: 0;
+    flex-grow: 1;
+}
 
-
-.caja1{
+.caja1 {
     background-color: yellowgreen;
+
 }
 
-.caja2{
-    background-color: greenyellow;
+.caja2 {
+    background-color: darkorchid;
 }
 
-.caja3{
+.caja3 {
     background-color: darkgray;
+    /*align-self: flex-start;*/
+}
+
+.caja4 {
+    background-color: coral;
 }
